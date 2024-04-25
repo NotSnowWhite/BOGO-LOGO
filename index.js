@@ -4,8 +4,8 @@ const inquirer = require('inquirer');
 const generateShapes = require('./lib/shapes');
 
 function writeToFile(filename, response) {
-    fs.writeFile(`examples/${filename}.svg`, response, (err) => {
-        err ? console.error(err) : console.log('Your logo was successfully created! Check it out.');
+    fs.writeFile(`logos/${filename}.svg`, response, (err) => {
+        err ? console.error(err) : console.log('Your logo was successfully generated! Check it out.');
     })
 
 }
