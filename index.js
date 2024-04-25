@@ -1,6 +1,7 @@
 const fs = require('fs');
-const shapes = require('./lib/shapes');
+// const shapes = require('./lib/shapes');
 const inquirer = require('inquirer');
+const generateShapes = require('./lib/shapes');
 
 function writeToFile(filename, response) {
     fs.writeFile(`examples/${filename}.svg`, response, (err) => {
@@ -15,7 +16,16 @@ function init() {
         {
             name: 'text',
             type: 'input',
-            message: 'Write up to 3 characters to be displayed inside the logo:'
+            message: 'Write up to 3 characters to be displayed inside the logo:',
+            validate: function (input) {
+                if (input.length <= 3) {
+                    return true;
+
+                } else { 
+                    return '3 char max';
+
+                }
+            }
         },
 
         {
@@ -43,9 +53,9 @@ function init() {
         },
 
     ])
-    .then((response) => {
-        writeToFile(`logo_${Date.now()}`, shapes(response));
-    });
+        .then((response) => {
+            writeToFile(`logo_${Date.now()}`, generateShapes(response));
+        });
 
 }
 init()
