@@ -1,7 +1,7 @@
 const fs = require('fs');
 // const shapes = require('./lib/shapes');
 const inquirer = require('inquirer');
-const generateShapes = require('./lib/shapes');
+const {generateShapes} = require('./lib/shapes');
 
 function writeToFile(filename, response) {
     fs.writeFile(`logos/${filename}.svg`, response, (err) => {
