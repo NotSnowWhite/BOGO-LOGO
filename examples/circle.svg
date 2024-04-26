@@ -1,4 +1,0 @@
-<svg height= "350" width="auto" xmlns="http://www.w3.org/2000/svg" > 
-    <circle cx="120" cy="120" r="100" stroke="pink" stroke-width="3" fill="blue" />
-    <text font-size="40" x="90" y="125" font-weight="bold" fill="white">red</text>
-    </svg>
