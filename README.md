@@ -22,7 +22,7 @@ The purpose of this project is to have a way to easily create a logo for my proj
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
+  - [Contributing](#contributing)
   - [License](#license)
   
   
@@ -35,7 +35,7 @@ The purpose of this project is to have a way to easily create a logo for my proj
   In the command line inside the BOGO-LOGO folder, run "npm i", wait for completion, and then run "node index.js" and answer prompt questions. 'Color' questions can be answered with colors or hex values alone.
 
 ![How to run!](/assets/images/Untitled_%20Apr%2025,%202024%208_24%20PM.gif)
-
+- [Walkthrough video](https://drive.google.com/file/d/1v0ydZH1WS68sBI_8BQUPH57YTwpPBJau/view)
 ## License
   
   This project utilizes the The_MIT_License and can be found at [Link to The_MIT_License](https://choosealicense.com/licenses/mit/)
