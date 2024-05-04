@@ -1,5 +1,4 @@
 const fs = require('fs');
-// const shapes = require('./lib/shapes');
 const inquirer = require('inquirer');
 const {generateShapes} = require('./lib/shapes');
 
