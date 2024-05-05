@@ -4,7 +4,7 @@ const {generateShapes} = require('./lib/shapes');
 
 function writeToFile(filename, response) {
     fs.writeFile(`logos/${filename}.svg`, response, (err) => {
-        err ? console.error(err) : console.log('Your logo was successfully generated! Check it out.');
+        err ? console.error(err, 'Your logo could not be created. Please try again') : console.log('Your logo was successfully generated! Check it out.');
     })
 
 }
